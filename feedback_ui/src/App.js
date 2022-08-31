@@ -1,6 +1,8 @@
 function App() {
   return (
-    <h1>Hello from the app component</h1>
+    React.cloneElement('div', {className: 'containe'},
+    React.createElement('h1', {}, 'My App')
+    )
   )
 }
 
