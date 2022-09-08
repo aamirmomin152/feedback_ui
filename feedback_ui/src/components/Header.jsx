@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types'
+
 function Header(props) {
   return (
     <header>
@@ -10,6 +12,10 @@ function Header(props) {
 
 Header.defaultProps = {
   text: 'Feedback UI',
+}
+
+Header.propTypes = {
+  text: PropTypes.string,
 }
 
 export default Header
